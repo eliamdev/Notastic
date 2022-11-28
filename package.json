@@ -1,0 +1,21 @@
+{
+  "name": "notastic",
+  "version": "1.0.0",
+  "description": "Proyecto de notas",
+  "main": "code.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "npm",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "eliamdev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
