@@ -7,6 +7,8 @@ this is a web application notes
 - Node.js
   - Express (ejs)
   - npm
+  - nodemon
+  - morgan
 - Ajax
 
 ## FrontEnd Tools
