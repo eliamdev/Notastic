@@ -1,6 +1,11 @@
 const express = require('express');
 //const morgan = require('morgan)');
+const mongoose = require('mongoose');
+
 const app = express();
+mongoose.connect('mongodb://127.0.0.1/notastic-db')
+    .then(db => console.log('DB is connect'))
+    .catch(err => console.error(err))
 
 // settings
 app.set('port', process.env.PORT || 3000);
