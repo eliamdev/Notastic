@@ -1,8 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.send('API notes is goes here');
-});
+const Note = require('../models/Note');
+
+router.get('/', async (req, res) => {
+    const notes = await Note.find()
+    res.json(notes);
+}); 
 
 module.exports = router;
