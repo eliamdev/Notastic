@@ -1,5 +1,5 @@
 const express = require('express');
-//const morgan = require('morgan)');
+const morgan = require('morgan');
 const mongoose = require('mongoose');
 
 const app = express();
@@ -11,7 +11,7 @@ mongoose.connect('mongodb://127.0.0.1/notastic-db')
 app.set('port', process.env.PORT || 3000);
 
 //Middlewales
-  //app.use(morgan('dev'));
+  app.use(morgan('dev'));
   app.use(express.json());
 
 //Routes
